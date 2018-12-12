@@ -1,9 +1,11 @@
-body {
-  font-family: "Montserrat", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "a-otf-midashi-go-mb31-pr6n", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-  font-size: 14px;
-  text-align: center;
-  color: #1D284D;
-  background-color: #fff;
-  font-feature-settings: "palt";
-  letter-spacing: .1em;
+.box {
+    /* background-image: repeating-linear-gradient(45deg, rgba(red, 0.25), rgba(red, 0.25) 35px, rgba(white, 0.25) 35px, rgba(white, 0.25) 70px); */
+    background: red;
+    background-size: 99px 99px; /* This is unique for this background, need to find a pattern and develop a formula */
+    animation: slide 10s infinite linear forwards;
+}
+
+@keyframes slide {
+    from { background-position: 0% 0; }
+    to { background-position: 100% 0; }
 }
